@@ -25,12 +25,21 @@ print "Fixing file: " + filename
 with open(filename, "r+b") as f:
     for i in range(3):
 	checksum = 0
-        for b in f.read(2558):
+        for b in f.read(0x9FE):
             checksum += unpack('i', b + '\x00\x00\x00')[0]
-        f.seek(2558 + (i*2560))
+        f.seek(0x9FE + (i*0xA00))
         f.write( pack('B', checksum & 0xFF) )
         f.write( pack('B', (checksum >> 8) & 0xFF) )
 
         print "Checksum for save slot " + str(i+1) + ": " + str(checksum)
 
-print"Done!"
+print"Done!
+
+""""
+
+
+
+
+
+
+""""
