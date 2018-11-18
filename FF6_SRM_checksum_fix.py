@@ -33,7 +33,7 @@ with open(filename, "r+b") as f:
 
         print "Checksum for save slot " + str(i+1) + ": " + str(checksum)
 
-print"Done!
+print "Done!"
 
 """"
 
