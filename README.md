@@ -10,6 +10,7 @@ List of games:
  * Final Fantasy IV (FF4)
  * Final Fantasy V  (FF5)
  * Final Fantasy VI (FF6)
+ * Harvest Moon
  * Lufia & The Fortress of Doom
  * Sim City
  * Secret of Evermore (SoE)
